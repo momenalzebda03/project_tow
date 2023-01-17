@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/all.min.css">
-    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/indx.css">
+    <link rel="stylesheet" href="bootstrap3/css3/all.min.css">
+    <link rel="stylesheet" href="bootstrap3/css3/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap3/css3/indx.css">
     <title>project elzero tow</title>
 </head>
 
@@ -15,7 +15,7 @@
     <!-- start header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar-dark">
         <div class="container">
-            <img class="navbar-brand" src="image/logo.png" alt="">
+            <img class="navbar-brand" src="image3/logo.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,13 +63,13 @@
                     elit, eget tincidunt.</p>
             </div>
             <div class="carousel-item active">
-                <img src="image/istockphoto-182256667-612x612.jpg" class="d-block w-100" alt="...">
+                <img src="image3/istockphoto-182256667-612x612.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="image/istockphoto-1296205012-170667a.jpg" class="d-block w-100" alt="...">
+                <img src="image3/istockphoto-1296205012-170667a.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="image/p06c29f1.jpg" class="d-block w-100" alt="...">
+                <img src="image3/p06c29f1.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -164,7 +164,7 @@
     <div class="div_image">
         <div class="my_flex">
             <div class="">
-                <img src="image/mobile.png" alt="">
+                <img src="image3/mobile.png" alt="">
             </div>
             <div class="div_color">
                 <h4>OUR DESIGNS COMES WITH...</h4>
@@ -232,7 +232,7 @@
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image/" . $row["image1"] . "' alt=''>";
+                            print "<img src='image3/" . $row["image1"] . "' alt=''>";
                         }
                     }
                     ?>
@@ -248,7 +248,7 @@
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image/" . $row["iamge2"] . "' alt=''>";
+                            print "<img src='image3/" . $row["iamge2"] . "' alt=''>";
                         }
                     }
                     ?>
@@ -264,7 +264,7 @@
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image/" . $row["image1"] . "' alt=''>";
+                            print "<img src='image3/" . $row["image1"] . "' alt=''>";
                         }
                     }
                     ?>
@@ -280,7 +280,7 @@
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image/" . $row["iamge2"] . "' alt='' style='width: 298%;'>";
+                            print "<img src='image3/" . $row["iamge2"] . "' alt='' style='width: 298%;'>";
                         }
                     }
                     ?>
@@ -296,7 +296,7 @@
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image/" . $row["image1"] . "' alt=''>";
+                            print "<img src='image3/" . $row["image1"] . "' alt=''>";
                         }
                     }
                     ?>
@@ -312,7 +312,7 @@
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image/" . $row["iamge2"] . "' alt=''>";
+                            print "<img src='image3/" . $row["iamge2"] . "' alt=''>";
                         }
                     }
                     ?>
@@ -328,7 +328,7 @@
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image/" . $row["image1"] . "' alt=''>";
+                            print "<img src='image3/" . $row["image1"] . "' alt=''>";
                         }
                     }
                     ?>
@@ -344,7 +344,7 @@
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image/" . $row["image1"] . "' alt='' style='width: 298%;'>";
+                            print "<img src='image3/" . $row["image1"] . "' alt='' style='width: 298%;'>";
                         }
                     }
                     ?>
@@ -374,7 +374,7 @@
 
         if ($table->num_rows > 0) {
             while ($row = $table->fetch_assoc()) {
-                print "<video src='vido/" . $row["vido"] . "' autoplay loop muted></video>";
+                print "<video src='vido3/" . $row["vido"] . "' autoplay loop muted></video>";
             }
         }
         ?>
@@ -390,7 +390,7 @@
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br> Mauris blandit aliquet elit, eget
             tincidunt.
         </p>
-        <img src="image/about.png" alt="">
+        <img src="image3/about.png" alt="">
         <div class="div_img">
             <div class="div_image_color">
                 <div class="container">
@@ -433,7 +433,7 @@
                     <br>
                     <div class="div_row">
                         <div class="div_flex_iamge">
-                            <img src="image/skills-01.jpg" alt="">
+                            <img src="image3/skills-01.jpg" alt="">
                         </div>
                         <div class="div_qunbour">
                             <p>qunbour you eli accumen le imperdiet et<br>portfolio at man maurin blandit aliquet elit
@@ -444,7 +444,7 @@
                     </div>
                     <div class="div_row">
                         <div class="div_flex_iamge">
-                            <img src="image/skills-02.jpg" alt="">
+                            <img src="image3/skills-02.jpg" alt="">
                         </div>
                         <div class="div_qunbour">
                             <p>qunbour you eli accumen le imperdiet et<br>portfolio at man maurin blandit aliquet elit
@@ -725,7 +725,7 @@
     <br>
     <!-- start footer -->
     <div class="div_footer">
-        <img class="navbar-brand" src="image/logo.png" alt="">
+        <img class="navbar-brand" src="image3/logo.png" alt="">
         <br>
         <br>
         <h5>WE ARE SOCIAL</h5>
@@ -741,8 +741,8 @@
     </div>
     <!-- end footer -->
 </body>
-<script src="bootstrap-5.2.2-dist/js/all.min.js"></script>
-<script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap3/js3/all.min.js"></script>
+<script src="bootstrap3/js3/bootstrap.bundle.min.js"></script>
 <script>
     function click1() {
 
