@@ -20,7 +20,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -40,7 +40,7 @@
                         <a class="nav-link" aria-current="page" href="#contact">CONTACT</a>
                     </li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex" style="margin-left: 200px;">
                     <i class="fas fa-search icon"></i>
                     <div class="div_hr"></div>
                 </form>
@@ -48,20 +48,20 @@
         </div>
     </nav>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="div_center">
+            <h2>HELLO WORLD!<br>WE ARE KASPER, WE MAKE ART.</h2>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                tincidunt
+                nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit
+                aliquet
+                elit, eget tincidunt.</p>
+        </div>
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="height: 25px; background-color: aqua;"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="height: 25px; background-color: aqua;"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="height: 25px; background-color: aqua;"></button>
         </div>
         <div class="carousel-inner">
-            <div class="div_right">
-                <h2>HELLO WORLD!<br>WE ARE KASPER, WE MAKE ART.</h2>
-                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-                    tincidunt
-                    nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit
-                    aliquet
-                    elit, eget tincidunt.</p>
-            </div>
             <div class="carousel-item active">
                 <img src="image3/istockphoto-182256667-612x612.jpg" class="d-block w-100" alt="...">
             </div>
@@ -162,27 +162,31 @@
         </div>
     </div>
     <div class="div_image">
-        <div class="my_flex">
-            <div class="">
-                <img src="image3/mobile.png" alt="">
-            </div>
-            <div class="div_color">
-                <h4>OUR DESIGNS COMES WITH...</h4>
-                <div class="">
-                    <i class="fas fa-laptop icon_laptop"></i>
-                    <p>Responsive design</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img src="image3/mobile.png" alt="">
                 </div>
-                <div class="">
-                    <i class="fas fa-laptop icon_laptop"></i>
-                    <p>modern and clean design</p>
-                </div>
-                <div class="">
-                    <i class="fas fa-laptop icon_laptop"></i>
-                    <p>clean code</p>
-                </div>
-                <div class="">
-                    <i class="fas fa-laptop icon_laptop"></i>
-                    <p>browser friendly</p>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="div_color">
+                        <h4>OUR DESIGNS COMES WITH...</h4>
+                        <div class="">
+                            <i class="fas fa-laptop icon_laptop"></i>
+                            <p>Responsive design</p>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-laptop icon_laptop"></i>
+                            <p>modern and clean design</p>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-laptop icon_laptop"></i>
+                            <p>clean code</p>
+                        </div>
+                        <div class="">
+                            <i class="fas fa-laptop icon_laptop"></i>
+                            <p>browser friendly</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,9 +227,9 @@
         </div>
     </div>
     <div class="div_image1">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="div_myimage">
                     <?php
 
                     $table = $data->query("select * from table_iamge where id = 1");
@@ -236,12 +240,10 @@
                         }
                     }
                     ?>
-                    <div class="div_bottom">
-                        <h5>my image one</h5>
-                        <p>number one</p>
-                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="div_myimage">
                     <?php
 
                     $table = $data->query("select * from table_iamge where id = 1");
@@ -252,12 +254,10 @@
                         }
                     }
                     ?>
-                    <div class="div_bottom">
-                        <h5>my image tow</h5>
-                        <p>number tow</p>
-                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="div_myimage">
                     <?php
 
                     $table = $data->query("select * from table_iamge where id = 2");
@@ -268,28 +268,24 @@
                         }
                     }
                     ?>
-                    <div class="div_bottom">
-                        <h5>my image three</h5>
-                        <p>number three</p>
-                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="div_myimage">
                     <?php
 
                     $table = $data->query("select * from table_iamge where id = 2");
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image3/" . $row["iamge2"] . "' alt='' style='width: 298%;'>";
+                            print "<img src='image3/" . $row["iamge2"] . "' alt=''>";
                         }
                     }
                     ?>
-                    <div class="div_bottom">
-                        <h5>my image four</h5>
-                        <p>number four</p>
-                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="div_myimage">
                     <?php
 
                     $table = $data->query("select * from table_iamge where id = 3");
@@ -300,12 +296,10 @@
                         }
                     }
                     ?>
-                    <div class="div_bottom">
-                        <h5>my image five</h5>
-                        <p>number five</p>
-                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="div_myimage">
                     <?php
 
                     $table = $data->query("select * from table_iamge where id = 3");
@@ -316,12 +310,10 @@
                         }
                     }
                     ?>
-                    <div class="div_bottom">
-                        <h5>my image six</h5>
-                        <p>number six</p>
-                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="div_myimage">
                     <?php
 
                     $table = $data->query("select * from table_iamge where id = 4");
@@ -332,26 +324,20 @@
                         }
                     }
                     ?>
-                    <div class="div_bottom">
-                        <h5>my image seven</h5>
-                        <p>number seven</p>
-                    </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="div_myimage">
                     <?php
 
                     $table = $data->query("select * from table_iamge where id = 5");
 
                     if ($table->num_rows > 0) {
                         while ($row = $table->fetch_assoc()) {
-                            print "<img src='image3/" . $row["image1"] . "' alt='' style='width: 298%;'>";
+                            print "<img src='image3/" . $row["image1"] . "' alt=''>";
                         }
                     }
                     ?>
-                    <div class="div_bottom">
-                        <h5>my image eait</h5>
-                        <p>number eait</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -361,23 +347,23 @@
     <br>
     <br>
     <div class="div_vido">
-        <div class="div_super">
-            <div class="">
+        <div class="div_flexcenter">
+            <div class="div_super">
                 <h2>super awesome video</h2>
                 <p style="text-align: center;">its all you vido</p>
                 <button><a href="updatevido.php">SEE MORE</button></a>
             </div>
-        </div>
-        <?php
+            <?php
 
-        $table = $data->query("select * from table_vido");
+            $table = $data->query("select * from table_vido");
 
-        if ($table->num_rows > 0) {
-            while ($row = $table->fetch_assoc()) {
-                print "<video src='vido3/" . $row["vido"] . "' autoplay loop muted></video>";
+            if ($table->num_rows > 0) {
+                while ($row = $table->fetch_assoc()) {
+                    print "<video src='vido3/" . $row["vido"] . "' autoplay loop muted></video>";
+                }
             }
-        }
-        ?>
+            ?>
+        </div>
     </div>
     <!-- end portfolio -->
     <!-- start about us -->
@@ -490,8 +476,10 @@
     <br>
     <br>
     <div class="div_img1">
-        <h4>"ACCUMSAN ID CURABITUR ET PORTITOR MAURIS BLANDIT DOLOR LOREM SOME<br>EST OUR DONEC STIN LORTIOS"</h4>
-        <p>join doe</p>
+        <div>
+            <h4>"ACCUMSAN ID CURABITUR ET PORTITOR MAURIS BLANDIT DOLOR LOREM SOME<br>EST OUR DONEC STIN LORTIOS"</h4>
+            <p>join doe</p>
+        </div>
     </div>
     <!-- end about us -->
     <!-- start pricing -->

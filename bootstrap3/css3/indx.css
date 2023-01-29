@@ -20,15 +20,17 @@ nav .container {
 }
 
 nav .container .collapse {
-    padding-left: 20%;
+    padding-left: 10%;
+}
+
+nav .container .collapse .my_form {
+    display: flex;
 }
 
 nav .container .collapse form .div_hr {
-    width: 0.2%;
+    width: 0.3%;
     height: 25px;
     background-color: var(--colorfour);
-    margin-left: -0.5%;
-    margin-top: -0.2%;
     position: absolute;
 }
 
@@ -36,13 +38,9 @@ nav .container::before {
     content: "";
     position: absolute;
     top: 80%;
-    width: 60%;
+    width: 1000px;
     height: 1px;
     background-color: rgba(238, 238, 238, 0.6);
-}
-
-.carousel .carousel-inner .carousel-item img {
-    height: 100vh;
 }
 
 .carousel div button {
@@ -68,8 +66,8 @@ nav .container .collapse .navbar-nav .nav-item .nav-link::before {
     position: absolute;
     margin-top: 54.5px;
     background-color: var(--color_one);
-    width: 4.5%;
-    height: 2px;
+    width: 45.5px;
+    height: 3px;
     display: none;
 }
 
@@ -82,20 +80,20 @@ nav .container .collapse .navbar-nav .nav-item .nav-link:hover::before {
     display: block;
 }
 
-div .carousel-inner .div_right {
-    position: absolute;
-    margin-top: 14%;
-    background-color: var(--color_tow);
-    width: 50%;
-    height: 350px;
-    z-index: 1;
+.carousel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-div .carousel-inner .div_right h2,
-div .carousel-inner .div_right p {
+.carousel .div_center {
+    position: absolute;
+    background-color: var(--color_tow);
+    width: 50%;
+    padding: 50px;
+    padding-left: 250px;
     color: var(--colorfour);
-    padding-left: 30%;
-    padding-top: 2%;
+    z-index: 1;
 }
 
 div .carousel-inner .div_right h2 {
@@ -160,39 +158,26 @@ div .carousel-inner .div_right h2 {
     margin-top: 5%;
     background-image: url("../../image3/images\ \(2\).jfif");
     background-size: cover;
-    height: 70vh;
+    height: 520px;
+    padding-top: 100px;
     overflow: hidden;
 }
 
-.div_image .my_flex {
-    display: flex;
-    gap: 10%;
-    padding-left: 30%;
-    padding-top: 120px;
+.div_image .container .row div img {
+    margin-top: 20px;
 }
 
-.div_color {
+.div_image .container .row div .div_color {
+    padding-left: 50px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    width: 500%;
     background-color: var(--color_tow);
-    width: 64.6%;
-    height: 50vh;
     color: var(--colorfour);
-    overflow: hidden;
-}
-
-.div_color h4 {
-    padding-top: 10%;
-    padding-left: 8%;
-}
-
-.div_color div {
-    display: flex;
-    gap: 4%;
-    padding-top: 3.5%;
-    padding-left: 8%;
 }
 
 .div_color div .icon_laptop {
-    font-size: 11px;
+    font-size: 40px;
 }
 
 /* end services */
@@ -222,35 +207,18 @@ div .carousel-inner .div_right h2 {
 }
 
 .div_image1 {
-    overflow: hidden;
     padding-top: 3%;
-    margin-left: -32%;
+    overflow: hidden;
 }
 
-.div_image1 .container .row div img {
-    width: 107.8%;
-    height: 40vh;
+.div_image1 .row div .div_myimage img {
+    width: 108%;
     transition: 0.4s;
+    cursor: pointer;
 }
 
-.div_image1 .container .row div .div_bottom {
-    position: absolute;
-    background-color: var(--colorfour);
-    width: 21%;
-    padding: 1%;
-    margin-top: -6.5%;
-    margin-left: -22%;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-.div_image1 .container .row div img:hover {
-    transform: rotate(5deg);
-}
-
-.div_image1 .container .row div img:hover+.div_bottom {
-    margin-left: 0%;
-    z-index: 0;
+.div_image1 .row div .div_myimage:hover img {
+    width: 100%;
 }
 
 .button_more {
@@ -269,41 +237,43 @@ div .carousel-inner .div_right h2 {
     background-color: var(--colorfive);
 }
 
-.div_vido .div_super {
-    position: absolute;
-    background-color: var(--color_tow);
-    width: 100%;
-    margin-top: 17%;
+.div_vido .div_flexcenter {
     display: flex;
     justify-content: center;
-    padding-top: 5%;
+    align-items: center;
+}
+
+.div_vido .div_flexcenter .div_super {
+    position: absolute;
+    background-color: var(--color_tow);
     color: var(--colorfour);
-    padding-bottom: 7%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.div_vido .div_flexcenter .div_super button {
+    background-color: black;
+    width: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.div_vido .div_flexcenter .div_super button a {
+    color: var(--colorfour);
+    text-decoration: none;
+}
+
+.div_vido .div_flexcenter .div_super button:hover {
+    background-color: red;
 }
 
 .div_vido video {
     width: 100%;
-}
-
-.div_vido .div_super div button a {
-    color: white;
-    text-decoration: none;
-}
-
-.div_vido .div_super div button {
-    position: absolute;
-    margin-left: 6.2%;
-    margin-top: 1%;
-    padding: 0.5%;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-color: var(--colorfive);
-    color: var(--colorfour);
-    z-index: 2;
-}
-
-.div_vido .div_super div button:hover {
-    background-color: red;
 }
 
 /* end portfolio */
@@ -528,7 +498,9 @@ div .carousel-inner .div_right h2 {
     height: 60vh;
     text-align: center;
     color: var(--colorfour);
-    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .div_services .container .my_row {
@@ -644,14 +616,13 @@ div .carousel-inner .div_right h2 {
     background-size: cover;
     display: flex;
     align-items: center;
-    padding-left: 20%;
 }
 
 .div_image2 .container .row div .icon {
     color: white;
     font-size: 25px;
     position: absolute;
-    margin-top: 0.5%;
+    margin-top: 8px;
     margin-left: 1%;
 }
 
@@ -720,7 +691,6 @@ textarea {
 .div_footer {
     background-image: url("../../image3/istockphoto-1170113588-170667a.jpg");
     background-size: cover;
-    height: 80vh;
     text-align: center;
     padding-top: 15%;
 }
@@ -783,6 +753,10 @@ textarea {
         content: "";
         display: none;
     }
+
+    nav .container .collapse .navbar-nav .nav-item .nav-link:hover::before {
+        display: none;
+    }
 }
 
 @media (max-width: 1189px) and (min-width: 0px) {
@@ -808,18 +782,52 @@ textarea {
     .container .my_row div {
         padding-top: 2%;
     }
+
+    nav .container::before {
+        width: 70%;
+    }
+
+    nav .container .collapse {
+        padding-left: 0%;
+    }
+
+    .carousel .div_center {
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+        padding-left: 0px;
+    }
+
+    .carousel .div_center h2,
+    .carousel .div_center p {
+        font-size: 8px;
+    }
 }
 
 @media (max-width: 651px) and (min-width: 0px) {
 
-    .div_services .container .my_row div div .p_pasic::before {
-        display: none;
+    .div_image {
+        height: 750px;
     }
 
-    div .carousel-inner .div_right {
+    .div_image .container .row div img {
+        width: 150px;
+    }
+
+    .div_image .container .row div .div_color {
+        margin-left: -35px;
+        padding-top: 0px;
+        margin-top: 20px;
         text-align: center;
-        width: 100%;
-        overflow: hidden;
+        width: 145%;
+    }
+
+    .div_color div .icon_laptop {
+        font-size: 20px;
+    }
+
+    .div_services .container .my_row div div .p_pasic::before {
+        display: none;
     }
 
     div .carousel-inner .div_right h2,
@@ -829,22 +837,6 @@ textarea {
 
     .div_image .my_flex div img {
         display: none;
-    }
-
-    .div_color {
-        width: 142%;
-        margin-left: -52%;
-    }
-
-    .div_vido .div_super {
-        height: 12vh;
-    }
-
-
-    .div_vido .div_super div h2 {
-        font-size: 10px;
-        margin-top: -40%;
-        padding-bottom: 0%;
     }
 
     .div_services img {
@@ -881,17 +873,15 @@ textarea {
         padding: 0%;
     }
 
+    .div_services .container .row div .div_flex div .my_icon {
+        padding-top: 0px;
+    }
+
+    .div_services .container .row {
+        padding-left: 0%;
+    }
+
     .div_services .container .row div .div_flex {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .div_color {
-        text-align: center;
-    }
-
-    .div_color div {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -902,18 +892,6 @@ textarea {
         flex-direction: column;
     }
 
-    .div_img .div_image_color .container .row {
-        padding-top: 5%;
-        margin-left: -20%;
-        text-align: center;
-    }
-
-    .div_img .div_image_color .container .row div .louk_icon {
-        background-color: var(--colorfive);
-        padding: 4%;
-        border-radius: 50%;
-    }
-
     .div_flex_one .container .row div .div_row {
         display: flex;
         flex-direction: column;
@@ -922,26 +900,15 @@ textarea {
     .div_flex_one .container .row div .div_row .div_qunbour p {
         text-align: center;
     }
+
+    .div_vido .div_flexcenter .div_super {
+        display: none;
+    }
 }
 
 @media (max-width: 415px) and (min-width: 0px) {
-
-    .div_services .container .row {
-        overflow: hidden;
-        padding-left: 0%;
-    }
-
     .div_image1 .container {
         margin-left: -8.8%;
-    }
-
-    .div_image1 .container .row div .div_bottom {
-        width: 110%;
-        padding-left: 20%;
-    }
-
-    .div_image1 .container .row div .div_bottom h5 {
-        font-size: 10px;
     }
 
     .div_circle {
@@ -955,7 +922,7 @@ textarea {
     .div_flex_one .container .row div div .div4 {
         width: 300px;
         margin-left: -100px;
-    }   
+    }
 
     .div_image2 .container .row div .icon {
         color: white;
@@ -994,6 +961,10 @@ textarea {
     .div_icon {
         flex-direction: column;
         margin-left: -5.2%;
+    }
+
+    .div_img .div_image_color .container .row {
+        display: none;
     }
 }
 
